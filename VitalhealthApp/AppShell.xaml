@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VitalhealthApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VitalhealthApp"
+    Shell.FlyoutBehavior="Disabled"
+    Title="VitalhealthApp"
+    Shell.TabBarForegroundColor="#03B4B1"
+    Shell.TabBarTitleColor="#03B4B1"
+    Shell.TabBarBackgroundColor="White"
+    FlyoutBehavior="Disabled">
+
+    <!-- Ruta de la pantalla de login -->
+    <ShellContent Route="login" ContentTemplate="{DataTemplate local:Login}" Shell.NavBarIsVisible="False" />
+
+    <TabBar>
+        <!-- Pestañas normales -->
+        <Tab Title="Inicio" Icon="inicio.png">
+            <ShellContent Route="mainCliente" ContentTemplate="{DataTemplate local:MainCliente}" />
+        </Tab>
+        <Tab Title="Invita" Icon="invita.png">
+            <ShellContent ContentTemplate="{DataTemplate local:InvitaYGana}" />
+        </Tab>
+
+        <!-- Botón central (se simula como una pestaña) -->
+        <Tab x:Name="centralTab" Title="" Icon="carrito.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Carrito}" />
+        </Tab>
+
+        <!-- Más pestañas normales -->
+        <Tab Title="Tiendas" Icon="tiendas.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Tiendas}" />
+        </Tab>
+        <Tab Title="Perfil" Icon="perfil.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Perfil}" />
+        </Tab>
+    </TabBar>
+
+    <!-- Define una ruta para CambioContrasena -->
+    <ShellContent Route="CambioContrasena" ContentTemplate="{DataTemplate local:CambioContrasena}" Shell.NavBarIsVisible="False" />
+    <ShellContent Route="crearCuenta" ContentTemplate="{DataTemplate local:CrearCuenta}" Shell.NavBarIsVisible="False" />
+</Shell>

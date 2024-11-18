@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.InvitaYGana"
+             Title="InvitaYGana"
+             BackgroundImageSource="fondopantallas.png"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="88*"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0">
+            <Label Text="Invita y gana"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="22"
+               FontFamily="RobotoMedium"
+               Margin="130,0,0,0"/>
+        </HorizontalStackLayout>
+
+        <Border Stroke="Transparent" BackgroundColor="White" Grid.Row="1" Grid.Column="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="35,35,0,0"/>
+                <!-- Redondea solo las esquinas superiores -->
+            </Border.StrokeShape>
+
+            <VerticalStackLayout>
+                <Label Text="¿Cómo funciona?"
+                   TextColor="#000000"
+                   BackgroundColor="White"
+                   HorizontalOptions="Start"
+                   HorizontalTextAlignment="Start"
+                   FontSize="20"
+                   FontFamily="RobotoMedium"
+                   Margin="30,30,0,0"/>
+
+                <HorizontalStackLayout>
+                    <Image Source="iconouno.png"
+                       Margin="40,40,0,0"
+                       HeightRequest="49"/>
+
+                    <Label Text="Recomienda a tus amigos y &#10;familiares unirse para que &#10;reciban $50 MXN en monedero"
+                       TextColor="#000000"
+                       BackgroundColor="White"
+                       HorizontalOptions="Start"
+                       HorizontalTextAlignment="Start"
+                       FontSize="16"
+                       FontFamily="RobotoLight"
+                       Margin="20,40,0,0"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+                    <Image Source="iconodos.png"
+                       Margin="40,40,0,0"
+                       HeightRequest="49"/>
+
+                    <Label Text="Obtendrás $50 MXN de regalo &#10;en saldo monedero, cuando tus &#10;recomendados comiencen a &#10;comprar"
+                       TextColor="#000000"
+                       BackgroundColor="White"
+                       HorizontalOptions="Start"
+                       HorizontalTextAlignment="Start"
+                       FontSize="16"
+                       FontFamily="RobotoLight"
+                       Margin="20,40,0,0"/>
+                </HorizontalStackLayout>
+
+                <StackLayout>
+                    <Frame CornerRadius="35" 
+                       Margin="30,45,30,0" 
+                       Padding="10,7,10,7" 
+                       BorderColor="Transparent"
+                       HeightRequest="210">
+                        <Frame.Background>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Color="#03B4B1" Offset="0.0" />
+                                <GradientStop Color="#22474D" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+
+                        <Label Text="COMPARTE TU &#10;CÓDIGO"
+                           TextColor="White"
+                           Padding="5,0"
+                           LineHeight="1"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           FontSize="24"
+                           FontFamily="RobotoRegular"
+                           FontAttributes="Bold"
+                           Margin="0,0,0,0">
+                        </Label>
+                    </Frame>
+
+                    <Label Text="EifEdvvDH2"
+                       TextColor="Black"
+                       BackgroundColor="White"
+                       LineHeight="1"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       FontSize="24"
+                       FontFamily="RobotoRegular"                            
+                       FontAttributes="Bold"
+                       Margin="0,-120,0,0"
+                       HeightRequest="76"
+                       WidthRequest="230"/>
+                </StackLayout>
+
+                <StackLayout VerticalOptions="End">
+                    <Label Text="¡Comparte para disfrutar de &#10;los beneficios que &#10;tiene VITALHEALTH para ti!"
+                       TextColor="Black"
+                       BackgroundColor="Transparent"
+                       LineHeight="1"
+                       FontSize="22"
+                       FontFamily="RobotoLight"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"
+                       Margin="0,90,0,0">
+                    </Label>
+                </StackLayout>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.RecuperarContrasena"
+             Title="RecuperarContrasena"
+             BackgroundImageSource="recuperarcontrasena.png">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0">
+            <Label Text="RECUPERAR &#10;CONTRASEÑA"
+                   TextColor="White"
+                   HorizontalOptions="Start"
+                   HorizontalTextAlignment="Start"
+                   FontSize="36"
+                   FontFamily="RobotoRegular"
+                   Margin="25,40,0,0"/>
+
+            <Image Source="logovitalhealthblancov.png"
+               HeightRequest="54"
+               WidthRequest="54"
+               Margin="60,-70,0,0"/>
+
+        </HorizontalStackLayout>
+
+        <Border Stroke="Transparent" BackgroundColor="White" Grid.Row="2" Grid.Column="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="35,35,0,0"/>
+                <!-- Redondea solo las esquinas superiores -->
+            </Border.StrokeShape>
+            <VerticalStackLayout>
+                <Label Text="Ingresa el número de telefóno &#10; con el que te registraste"
+                   TextColor="#4F4F4F"
+                   LineHeight="1"
+                   HorizontalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="22"
+                   FontFamily="RobotoRegular"
+                   Margin="0,25,0,0"/>
+
+                <Frame CornerRadius="20" Margin="30,25,30,0" Padding="10,7,10,7" BackgroundColor="White" BorderColor="#03B4B1">
+                    <Entry BackgroundColor="White" 
+                       MaximumHeightRequest="48"
+                       PlaceholderColor="#4F4F4F"
+                       Placeholder="Ingresa los 10 dígitos"
+                       FontFamily="RobotoLight"
+                       FontSize="15">
+                        <Entry.Shadow>
+                            <Shadow Brush="Black"
+                                Offset="20,20"
+                                Radius="40"
+                                Opacity="0.8">
+                            </Shadow>
+                        </Entry.Shadow>
+                    </Entry>
+                </Frame>
+
+                <Button x:Name="BTNRecCon1"
+                    BackgroundColor="#22474D"
+                    HeightRequest="65"
+                    WidthRequest="300"
+                    CornerRadius="20"
+                    Text="SIGUIENTE"
+                    FontFamily="RobotoBold"
+                    FontSize="20"
+                    Margin="0,25,0,0"
+                    Clicked="BTNRecCon1_Clicked">
+                    <Button.Shadow>
+                        <Shadow Brush="Black"
+                            Offset="0,10"
+                            Radius="10"
+                            Opacity="0.3">
+                        </Shadow>
+                    </Button.Shadow>
+                </Button>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,113 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = VitalhealthApp
+build_property.ProjectDir = C:\Users\itzel\source\repos\VitalhealthApp\VitalhealthApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/CambioContrasena.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.CambioContrasena.xaml
+build_metadata.AdditionalFiles.TargetPath = CambioContrasena.xaml
+build_metadata.AdditionalFiles.RelativePath = CambioContrasena.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Carrito.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Carrito.xaml
+build_metadata.AdditionalFiles.TargetPath = Carrito.xaml
+build_metadata.AdditionalFiles.RelativePath = Carrito.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/ConfirmacionTelefono.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.ConfirmacionTelefono.xaml
+build_metadata.AdditionalFiles.TargetPath = ConfirmacionTelefono.xaml
+build_metadata.AdditionalFiles.RelativePath = ConfirmacionTelefono.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/CrearCuenta.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.CrearCuenta.xaml
+build_metadata.AdditionalFiles.TargetPath = CrearCuenta.xaml
+build_metadata.AdditionalFiles.RelativePath = CrearCuenta.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/InvitaYGana.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.InvitaYGana.xaml
+build_metadata.AdditionalFiles.TargetPath = InvitaYGana.xaml
+build_metadata.AdditionalFiles.RelativePath = InvitaYGana.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Login.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/MainCliente.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.MainCliente.xaml
+build_metadata.AdditionalFiles.TargetPath = MainCliente.xaml
+build_metadata.AdditionalFiles.RelativePath = MainCliente.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Perfil.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Perfil.xaml
+build_metadata.AdditionalFiles.TargetPath = Perfil.xaml
+build_metadata.AdditionalFiles.RelativePath = Perfil.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/RecuperarContrasena.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.RecuperarContrasena.xaml
+build_metadata.AdditionalFiles.TargetPath = RecuperarContrasena.xaml
+build_metadata.AdditionalFiles.RelativePath = RecuperarContrasena.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/RecuperarContrasenaVerificacion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.RecuperarContrasenaVerificacion.xaml
+build_metadata.AdditionalFiles.TargetPath = RecuperarContrasenaVerificacion.xaml
+build_metadata.AdditionalFiles.RelativePath = RecuperarContrasenaVerificacion.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/itzel/source/repos/VitalhealthApp/VitalhealthApp/Tiendas.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = VitalhealthApp.Tiendas.xaml
+build_metadata.AdditionalFiles.TargetPath = Tiendas.xaml
+build_metadata.AdditionalFiles.RelativePath = Tiendas.xaml

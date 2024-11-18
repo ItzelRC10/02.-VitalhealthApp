@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.Login"
+             Title="Login"
+             BackgroundImageSource="login.png">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+            <Image Source="logovitalhealthblanco.png"
+               MaximumHeightRequest="91"
+               MaximumWidthRequest="157"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1">
+            <Frame CornerRadius="17" Margin="0,30,0,0" Padding="10,7,10,7" BackgroundColor="White">
+                <Entry BackgroundColor="White"
+                   PlaceholderColor="#4F4F4F"
+                   Placeholder="Número de teléfono"
+                   FontFamily="RobotoLight"
+                   FontSize="15">
+                    <Entry.Shadow>
+                        <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8">
+                        </Shadow>
+                    </Entry.Shadow>
+                </Entry>
+            </Frame>
+            <Frame CornerRadius="17" Margin="0,25,0,0" Padding="10,7,10,7" BackgroundColor="White">
+                <Entry BackgroundColor="White" 
+                   MaximumHeightRequest="48"
+                   PlaceholderColor="#4F4F4F"
+                   Placeholder="Contraseña"
+                   FontFamily="RobotoLight"
+                   FontSize="15">
+                    <Entry.Shadow>
+                        <Shadow Brush="Black"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8">
+                        </Shadow>
+                    </Entry.Shadow>
+                </Entry>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="5" Grid.Column="1">
+            <Label x:Name="OlvidarContrasena"
+               Text="¿Olvidaste tu contraseña?"
+               TextColor="White"
+               FontFamily="RobotoLight"
+               FontSize="14"
+               Margin="10,20,0,10">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                    Tapped="TapGestureRecognizer_Tapped"
+                    NumberOfTapsRequired="1"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button x:Name="BTNIngresar"
+                BackgroundColor="#03B4B1"
+                HeightRequest="65"
+                CornerRadius="17"
+                Text="INGRESAR"
+                FontFamily="RobotoBold"
+                FontSize="20"
+                Clicked="BTNIngresar_Clicked">
+                <Button.Shadow>
+                    <Shadow Brush="Black"
+                            Offset="0,0"
+                            Radius="40"
+                            Opacity="0.3">
+                    </Shadow>
+                </Button.Shadow>
+            </Button>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Margin="0,-65,0,0">
+            <Line X1="15"
+              Y1="700"
+              X2="300"
+              Y2="700"
+              Stroke="#22474D"
+              StrokeThickness="2"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="7" Grid.Column="1" Margin="0,25,0,0">
+            <Label Text="¿No tienes una cuenta?"
+               TextColor="White"
+               FontFamily="RobotoLight"
+               FontSize="14"
+               Margin="0,20,0,10"
+               HorizontalOptions="Center">
+            </Label>
+
+            <Button x:Name="BTNCrearCuenta"
+                BackgroundColor="Transparent"
+                HeightRequest="45"
+                CornerRadius="35"
+                Text="CREAR CUENTA"
+                FontFamily="RobotoMedium"
+                FontSize="16"
+                BorderColor="#03B4B1"
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                Clicked="BTNCrearCuenta_Clicked">
+            </Button>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

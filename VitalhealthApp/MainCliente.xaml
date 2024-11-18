@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.MainCliente"
+             BackgroundImageSource="maincliente.png"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+            <!-- Ajuste del margen de la campana -->
+            <ImageButton x:Name="BTNNotificaciones"
+                     Source="campana2.png"
+                     WidthRequest="25"
+                     HeightRequest="25"
+                     Margin="280,-220,0,0"
+                     Clicked="BTNNotificaciones_Clicked">
+            </ImageButton>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+            <!-- Ajuste en márgenes para mejor alineación -->
+            <Label Text="¡Hola,"
+               FontFamily="Roboto"
+               FontSize="32"
+               TextColor="White"
+               Margin="0,5,0,0"
+               HorizontalTextAlignment="Start">
+            </Label>
+
+            <Label Text="Alonso!"
+               FontSize="32"
+               TextColor="White"
+               Margin="0,0,0,0"
+               HorizontalTextAlignment="Start"
+               FontFamily="RobotoBold">
+            </Label>
+
+            <Frame CornerRadius="12"
+               WidthRequest="325"
+               HeightRequest="130"
+               BorderColor="#86C3C2"
+               Margin="0,80,0,0"
+               Padding="0"
+               BackgroundColor="Transparent">
+                <Frame.Shadow>
+                    <Shadow Brush="Black"
+                                Offset="20,20"
+                                Radius="40"
+                                Opacity="0.8">
+                    </Shadow>
+                </Frame.Shadow>
+
+                <Button BackgroundColor="#86C3C2"
+                    HeightRequest="61"
+                    CornerRadius="0"
+                    Margin="0,95,0,0"
+                    Text="Recargar"
+                    TextColor="#22474D"
+                    FontFamily="RobotoMedium"
+                    FontSize="21"
+                    Padding="0,-10,0,0">
+                </Button>
+            </Frame>
+
+            <Line X1="155"
+              Y1="-115"
+              X2="155"
+              Y2="-65"
+              Stroke="#86C3C2"
+              StrokeThickness="1"/>
+
+            <!-- Ajuste de márgenes de iconos -->
+            <Image Source="tarjeta.png"
+               WidthRequest="35"
+               Margin="170,-55,0,0">
+            </Image>
+
+            <Image Source="vitalcoin.png"
+               WidthRequest="35"
+               Margin="-160,-35,0,0"/>
+
+            <Label Text="125 puntos"
+               FontFamily="RobotoMedium"
+               FontSize="17"
+               TextColor="#22474D"
+               Margin="30,3,0,10">
+            </Label>
+
+            <Label Text="$210.00"
+               FontFamily="RobotoMedium"
+               FontSize="17"
+               TextColor="#22474D"
+               Margin="154,-33,0,10"
+               HorizontalTextAlignment="Center">
+            </Label>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="1">
+            <Label Text="Novedades"
+               FontFamily="RobotoMedium"
+               FontSize="24"
+               TextColor="#22474D"
+               Margin="0,40,0,10">
+            </Label>
+
+            <!-- Ajuste en el tamaño del Frame y CarouselView -->
+            <Frame CornerRadius="30" 
+               Padding="0"
+               IsClippedToBounds="True"
+               WidthRequest="325"
+               HeightRequest="202"
+               BorderColor="Transparent">
+
+                <!-- CarouselView -->
+                <CarouselView ItemsSource="{Binding ImageCollection}"
+                          IndicatorView="indicadoresCarousel">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Aspect="AspectFill"
+                               WidthRequest="325"
+                               HeightRequest="202"
+                               Source="{Binding ImageUrl}"/>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+                <Frame.Shadow>
+                    <Shadow Brush="Black"
+                                Offset="20,20"
+                                Radius="40"
+                                Opacity="0.8">
+                    </Shadow>
+                </Frame.Shadow>
+            </Frame>
+
+            <IndicatorView x:Name="indicadoresCarousel"
+                       HorizontalOptions="Center"
+                       IndicatorColor="#D9D9D9"
+                       IndicatorSize="8"
+                       SelectedIndicatorColor="#86C3C2"
+                       Margin="0,10,0,0"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1">
+            <Image Source="anuncio.png"
+               WidthRequest="325"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

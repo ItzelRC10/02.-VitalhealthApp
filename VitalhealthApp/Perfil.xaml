@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.Perfil"
+             Title="Perfil"
+             BackgroundImageSource="fondopantallas.png"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0">
+            <Label Text="Perfil"
+                TextColor="White"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontSize="22"
+                FontFamily="RobotoMedium"
+                Margin="170,0,0,0"/>
+        </HorizontalStackLayout>
+
+
+        <Border Stroke="Transparent" BackgroundColor="White" Grid.Row="1" Grid.RowSpan="7" Grid.Column="0" Grid.ColumnSpan="4">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="35,35,0,0"/>
+                <!-- Redondea solo las esquinas superiores -->
+            </Border.StrokeShape>
+        </Border>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="1">
+            <Border Grid.Row="1" Grid.Column="0" WidthRequest="110" HeightRequest="110" HorizontalOptions="Start">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="55,55,55,55"/>
+                    <!-- Redondea solo las esquinas superiores -->
+                </Border.StrokeShape>
+                <Border.Stroke>
+                    <SolidColorBrush Color="Black"/>
+                </Border.Stroke>
+
+                <Image BackgroundColor="#86C3C2"
+                   Source="usuario.png"
+                   Aspect="Center"/>
+
+            </Border>
+            <Border WidthRequest="101" HeightRequest="35" HorizontalOptions="Start" Margin="5,10,0,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="55,55,55,55"/>
+                    <!-- Redondea solo las esquinas superiores -->
+                </Border.StrokeShape>
+                <Border.Stroke>
+                    <SolidColorBrush Color="#03B4B1"/>
+                </Border.Stroke>
+
+                <Button x:Name="BTNCambiarFoto"
+                    Text="CAMBIAR FOTO"
+                    FontFamily="RobotoMedium"
+                    FontSize="10"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    TextColor="Black"
+                    Clicked="BTNCambiarFoto_Clicked"/>
+            </Border>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="2" Grid.Column="2">
+            <Label Text="MIGUEL ALONSO LÓPEZ PEÑUELAS"
+               FontFamily="RobotoBold"
+               FontSize="20"
+               TextColor="Black"
+               Margin="15,15,0,0"/>
+
+            <Label Text="Cliente"
+               FontFamily="RobotoMedium"
+               FontSize="14"
+               TextColor="#9E9E9E"
+               Margin="15,0,0,0"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2">
+            <HorizontalStackLayout>
+                <Label Text="No. Cuenta:"
+                   FontFamily="RobotoMedium"
+                   FontSize="16"
+                   TextColor="Black"/>
+
+                <Label Text=" 84723"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Teléfono:"
+                   FontFamily="RobotoMedium"
+                   FontSize="16"
+                   TextColor="Black"/>
+
+                <Label Text=" 6871587010"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Label Text="Fecha de Nacimiento:"
+                   FontFamily="RobotoMedium"
+                   FontSize="16"
+                   TextColor="Black"/>
+
+                <Label Text=" 18 de Enero del 2002"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"/>
+            </HorizontalStackLayout>
+
+            <Line X1="0"
+              Y1="15"
+              X2="312"
+              Y2="15"
+              Stroke="#03B4B1"
+              StrokeThickness="1"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Center" VerticalOptions="Center">
+            <HorizontalStackLayout VerticalOptions="Center">
+                <VerticalStackLayout VerticalOptions="Center" Margin="12,0">
+                    <Border WidthRequest="55" HeightRequest="55">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30,30,30,30"/>
+                            <!-- Redondea solo las esquinas superiores -->
+                        </Border.StrokeShape>
+
+                        <Border.Stroke>
+                            <SolidColorBrush Color="Transparent"/>
+                        </Border.Stroke>
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Color="#03B4B1" Offset="0.0" />
+                                <GradientStop Color="#22474D" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <ImageButton Source="bolsa.png"
+                                 BackgroundColor="Transparent"
+                                 BorderColor="Transparent"
+                                 Aspect="AspectFit"
+                                 Padding="10"/>
+                    </Border>
+
+                    <Label Text="Mis pedidos"
+                       FontFamily="RobotoMedium"
+                       FontSize="14"
+                       TextColor="Black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout VerticalOptions="Center" Margin="12,0">
+                    <Border WidthRequest="55" HeightRequest="55">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30,30,30,30"/>
+                            <!-- Redondea solo las esquinas superiores -->
+                        </Border.StrokeShape>
+
+                        <Border.Stroke>
+                            <SolidColorBrush Color="Transparent"/>
+                        </Border.Stroke>
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Color="#03B4B1" Offset="0.0" />
+                                <GradientStop Color="#22474D" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <ImageButton Source="recibo.png"
+                                 BackgroundColor="Transparent"
+                                 BorderColor="Transparent"
+                                 Aspect="AspectFit"
+                                 Padding="10"/>
+                    </Border>
+
+                    <Label Text="Movimientos"
+                       FontFamily="RobotoMedium"
+                       FontSize="14"
+                       TextColor="Black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout VerticalOptions="Center" Margin="12,0">
+                    <Border WidthRequest="55" HeightRequest="55">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="30,30,30,30"/>
+                            <!-- Redondea solo las esquinas superiores -->
+                        </Border.StrokeShape>
+
+                        <Border.Stroke>
+                            <SolidColorBrush Color="Transparent"/>
+                        </Border.Stroke>
+
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                                <GradientStop Color="#03B4B1" Offset="0.0" />
+                                <GradientStop Color="#22474D" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <ImageButton Source="cerrarsesion.png"
+                                 BackgroundColor="Transparent"
+                                 BorderColor="Transparent"
+                                 Aspect="AspectFit"
+                                 Padding="10"/>
+                    </Border>
+
+                    <Label Text="Cerrar sesión"
+                       FontFamily="RobotoMedium"
+                       FontSize="14"
+                       TextColor="Black"/>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <Line X1="0"
+              Y1="5"
+              X2="312"
+              Y2="5"
+              Stroke="#03B4B1"
+              StrokeThickness="1"/>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,10">
+            <Label Text="CONTACTO"
+               FontFamily="RobotoMedium"
+               FontSize="18"
+               TextColor="#03B4B1"
+               Margin="0,0,0,6"/>
+
+            <HorizontalStackLayout Margin="0,5">
+                <Image Source="llamada.png"
+                   HeightRequest="20"/>
+
+                <Label Text="55 7100 2023"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,5">
+                <Image Source="correo.png"
+                   HeightRequest="20"/>
+
+                <Label Text="info@vitalhealth.com.mx"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,5">
+                <Image Source="facebook.png"
+                   HeightRequest="20"/>
+
+                <Label Text="Vitalhealth"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,5">
+                <Image Source="instagram.png"
+                   HeightRequest="21"/>
+
+                <Label Text="vitalhealth.mx"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,5">
+                <Image Source="web.png"
+                   HeightRequest="21"/>
+
+                <Label Text="vitalhealthglobal.com"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Margin="0,5,0,10">
+                <Image Source="whatsapp.png"
+                   HeightRequest="22"/>
+
+                <Label Text="+52 81 1965 7442"
+                   FontFamily="RobotoLight"
+                   FontSize="16"
+                   TextColor="Black"
+                   Margin="10,0,0,0"/>
+            </HorizontalStackLayout>
+
+            <Line X1="0"
+              Y1="5"
+              X2="312"
+              Y2="5"
+              Stroke="#03B4B1"
+              StrokeThickness="1"/>
+
+            <HorizontalStackLayout Margin="0,15,0,10">
+                <Image Source="basura.png"
+                   HeightRequest="22"/>
+
+                <Label Text="Eliminar cuenta"
+                   FontFamily="RobotoMedium"
+                   FontSize="16"
+                   TextColor="#FF6E6E"
+                   Margin="10,0,0,0">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"
+                        NumberOfTapsRequired="1"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

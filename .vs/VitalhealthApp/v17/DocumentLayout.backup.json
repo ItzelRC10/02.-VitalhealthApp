@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|c:\\users\\itzel\\source\\repos\\vitalhealthapp\\vitalhealthapp\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|solutionrelative:vitalhealthapp\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|c:\\users\\itzel\\source\\repos\\vitalhealthapp\\vitalhealthapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|solutionrelative:vitalhealthapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|c:\\users\\itzel\\source\\repos\\vitalhealthapp\\vitalhealthapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|solutionrelative:vitalhealthapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|c:\\users\\itzel\\source\\repos\\vitalhealthapp\\vitalhealthapp\\crearcuenta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEDCD1F4-D912-44D9-8CC6-073F9F0D08D4}|VitalhealthApp\\VitalhealthApp.csproj|solutionrelative:vitalhealthapp\\crearcuenta.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\ApiService.cs",
+              "RelativeDocumentMoniker": "VitalhealthApp\\ApiService.cs",
+              "ToolTip": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\ApiService.cs",
+              "RelativeToolTip": "VitalhealthApp\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T03:53:49.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "VitalhealthApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\MauiProgram.cs",
+              "RelativeToolTip": "VitalhealthApp\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T23:21:20.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\appsettings.json",
+              "RelativeDocumentMoniker": "VitalhealthApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\appsettings.json",
+              "RelativeToolTip": "VitalhealthApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-13T10:40:12.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CrearCuenta.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\CrearCuenta.xaml.cs",
+              "RelativeDocumentMoniker": "VitalhealthApp\\CrearCuenta.xaml.cs",
+              "ToolTip": "C:\\Users\\itzel\\source\\repos\\VitalhealthApp\\VitalhealthApp\\CrearCuenta.xaml.cs",
+              "RelativeToolTip": "VitalhealthApp\\CrearCuenta.xaml.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T11:07:35.941Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

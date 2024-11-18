@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "226318321897",
+    "project_id": "vitalhealth-7d3c5",
+    "storage_bucket": "vitalhealth-7d3c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226318321897:android:21ea488e243cb63102c878",
+        "android_client_info": {
+          "package_name": "com.vitalhealth.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnrlgeoaGcM5F39UVJen7xzWjVEqOGvPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

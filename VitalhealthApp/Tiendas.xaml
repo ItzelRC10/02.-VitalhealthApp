@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VitalhealthApp.Tiendas"
+             BackgroundImageSource="fondopantallas.png"
+             Shell.NavBarIsVisible="False">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+
+        <HorizontalStackLayout Grid.Row="0" Grid.Column="0">
+            <Label Text="Tiendas"
+           TextColor="White"
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           FontSize="22"
+           FontFamily="RobotoMedium"
+           Margin="155,0,0,0"/>
+        </HorizontalStackLayout>
+
+
+        <Border Stroke="Transparent" BackgroundColor="White" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="35,35,0,0"/>
+                <!-- Redondea solo las esquinas superiores -->
+            </Border.StrokeShape>
+        </Border>
+
+        <HorizontalStackLayout Grid.Row="1" Grid.Column="0">
+            <Border Grid.Row="1" Grid.Column="0" WidthRequest="300" HeightRequest="37" BackgroundColor="#EBEBEB" Margin="20,0,50,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="35,35,35,35"/>
+                    <!-- Redondea solo las esquinas superiores -->
+                </Border.StrokeShape>
+                <Border.Stroke>
+                    <SolidColorBrush Color="Transparent"/>
+                </Border.Stroke>
+
+                <Entry  BackgroundColor="#EBEBEB" 
+                    WidthRequest="280" 
+                    HeightRequest="37">
+                </Entry>
+            </Border>
+            <ImageButton Source="busqueda1.png"
+                     HeightRequest="32"
+                     WidthRequest="32"
+                     Margin="-35,0,0,0">
+            </ImageButton>
+        </HorizontalStackLayout>
+
+        <Label Grid.Row="3" 
+           Grid.Column="0"                                                                                                                                                                              
+           Text="Tiendas cercanas"
+           FontFamily="RobotoMedium"
+           FontSize="20"
+           TextColor="#6AA946"
+           Margin="15,0,0,0">
+
+        </Label>
+
+    </Grid>
+</ContentPage>
